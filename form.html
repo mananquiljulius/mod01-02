@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form</title>
+</head>
+<body>
+	<form action="" method="">
+		<!-- text field input type = textbox -->
+		<label for="username">Username:</label><input type="text" name="username" required="true" placeholder="user123" id="username">	<br>
+		<!-- password field -->
+		<label>Password:</label><input type="password" name="password"><br>
+
+		<!-- radio button -->
+		<label>Meal:</label> 
+		<input type="radio" checked name="meal" value="breakfast"> Breakfast
+		<input type="radio" name="meal" value="lunch"> Lunch
+		<input type="radio" name="meal" value="dinner"> Dinner <br>
+
+		<!-- checkbox -->
+		<label>Utensils:</label>
+		<input type="checkbox" checked name="utensil" value="spoon">Spoon
+		<input type="checkbox" name="utensil" value="fork">Fork
+		<input type="checkbox" name="utensil" value="knife">Knife<br>
+
+		<!-- email -->
+		<label for="email">Email:</label>
+		<input type="email" name="email" id="email"><br>
+
+		<!-- number -->
+		<label for="age">Age:</label>
+		<input type="number" name="age"  id="age" min="0"><br> 
+
+		<!-- text area  -->
+		<textarea name="comments">Write your comments here</textarea><br>
+
+		<!-- Drop down list -->
+		<select name="tvstation">
+			<option value="abscbn">ABS-CBN</option>
+			<option value="gma" selected>GMA</option> <!-- selected =  default dropdown -->
+			<option value="tv5">TV 5</option>
+		</select><br>
+
+		<!-- file -->
+		<input type="file" name="profile_pic"><br> <!--browse then upload a file -->
+
+		<!-- button -->
+		<button>Hello</button><br>
+
+		<!-- fieldset -->
+		<fieldset>
+			<legend>Contact Details</legend>
+			<label>Email: <input type="email" name="email"></label><br>
+			<label>Mobile: <input type="number" name="mobile" min="0"></label><br>
+		</fieldset>
+
+
+		<!-- submit -->
+		<input type="submit" value="Log in"><br>
+
+	</form>
+
+</body>
+</html>

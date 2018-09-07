@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tables</title>
+</head>
+<body>
+
+	<table>
+		<!-- tr = table row -->
+		<tr>
+			<!-- td = table data -->
+			<td>Row1Column1</td>
+			<td>Row1Column2</td>
+			<td>Row1Column3</td>
+
+		</tr>
+		<tr>
+			<td>Row1Column1</td>
+			<td>Row1Column2</td>
+			<td>Row1Column3</td>
+		</tr>
+	</table>
+
+	<table border="black">
+		<tr>
+			<!-- th = table headings bold text -->
+			<th></th> <!-- row 0 column 0 -->
+			<th scope="col">Saturday</th> <!-- column 1 -->
+			<th scope="col">Sunday</th> <!-- column 2 -->
+		</tr>
+		<tr>
+			<th scope="row">Tickets sold:</th> <!-- row 1 -->
+			<td>120</td>
+			<td>135</td>
+		</tr>
+		<tr>
+			<th scope="row">Tickets sales:</th> <!-- row 2 -->
+			<td>$600</td>
+			<td>$675</td>
+		</tr>
+	</table>
+
+	<!-- Spanning Columns -->
+	<table border="black">
+		<tr>
+			<th></th>
+			<th>9am</th>
+			<th>10am</th>
+			<th>11am</th>
+			<th>12nn</th>
+		</tr>
+		<tr>
+			<th>Monday</th>
+			<td colspan="2">Geography</td> <!-- occupy 2 column -->
+			<td>Math</td>
+			<td>Art</td>
+		</tr>
+		<tr>
+			<th>Tuesday</th>
+			<td colspan="3">Gym</td> <!-- occupy 3 column -->
+			<td>Home Ec</td>
+		</tr>
+	</table>
+
+	<!-- Spanning Rows -->
+	<table border="black">
+		<tr>
+			<th></th>
+			<th>TV5</th>
+			<th>GMA</th>
+			<th>ABSCBN</th>
+		</tr>
+		<tr>
+			<th>6pm - 7pm</th>
+			<td rowspan="2">Cartoon</td> <!-- occupy 2 rows -->
+			<td>Comedy</td>
+			<td>News</td>
+		</tr>
+		<tr>
+			<th>7pm - 8pm</th>
+			<td rowspan="3">Sports</td> <!-- occupy 3 rows -->
+			<td>Current Affairs</td>
+		</tr>
+	 	<tr>
+			<th>8pm - 9pm</th>
+			<td rowspan="2">Drama</td>
+			<td rowspan="2">Talkshow</td>
+		</tr>
+		<tr>
+			<th>9pm - 10pm</th>
+		</tr>
+	</table>
+
+</body>
+</html>
